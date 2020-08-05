@@ -1,0 +1,10 @@
+{%extends 'base.html'%}
+{%block content%}
+<h1>Create Your Portfolio!!</h1>
+{%if user.is_authenticated %}
+<p>You have already Registed to Update your portfolio click <a href="#">here</a></p>
+{%else%}
+<p>Register to Create your portfolio click <a href="register">here</a></p>
+
+{%endif%}
+{%endblock%}
