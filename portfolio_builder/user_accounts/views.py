@@ -6,6 +6,8 @@ def index(request):
 	return render(request,'index.html')
 
 def register(request):
+	# TODO: ADD EMAIL AUTHENTICATION
+	# https://medium.com/@frfahim/django-registration-with-confirmation-email-bb5da011e4ef
 	registered=False
 	if(request.method=="POST"):
 		user_form=UserForm(data=request.POST)
